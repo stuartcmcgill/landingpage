@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  headline: MyString
+  subhead: MyString
+  image: MyString
+  captionbutton_text: MyString
+  call_to_action: MyString
+  button_color: MyString
+  background_color: MyString
+
+two:
+  headline: MyString
+  subhead: MyString
+  image: MyString
+  captionbutton_text: MyString
+  call_to_action: MyString
+  button_color: MyString
+  background_color: MyString

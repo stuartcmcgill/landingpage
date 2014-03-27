@@ -1,0 +1,33 @@
+<div style="background-color:<%= @landing_page.background_color %>"> 
+<div class="container">
+<%= image_tag 'header-banner.png', class: "pull-right", height:"100px" %>
+<br>
+<br>
+<div class="well">
+<div class="row"> 
+<div class="col-md-9">
+ <h1> <%= @landing_page.headline %></h1>
+
+
+
+  <h2><%= @landing_page.subhead %></h2>
+</div>
+<div class="col-md-3">
+
+  <%= image_tag @landing_page.image, class: "pull-right", height:"100px" %> <br>
+<%= @landing_page.image_caption %> <br>
+</div>
+</div>
+<p> <%= @landing_page.body_copy %> </p>
+<%= @landing_page.privacy %>
+ <%= link_to @landing_page.button2_text, root_path, class:"btn btn-"+@landing_page.button2_color %>
+
+<%= render 'prospects/form' %>
+
+</div>
+
+
+<%= link_to 'Edit', edit_landing_page_path(@landing_page) %> |
+<%= link_to 'Back', landing_pages_path %>
+</div>
+</div>
